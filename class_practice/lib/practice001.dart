@@ -16,11 +16,11 @@ class _PracticeState extends State<Practice> {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.home),
+          icon: const Icon(Icons.home),
           iconSize: 30,
           color: Colors.green[900],
         ),
-        title: Text(
+        title: const Text(
           'Practice',
           style: TextStyle(
             fontSize: 30,
@@ -30,7 +30,7 @@ class _PracticeState extends State<Practice> {
         ),
         centerTitle: true,
         actions: [
-          FlatButton(
+          TextButton(
             onPressed: () {},
             child: Container(
                 height: 28,
@@ -39,7 +39,7 @@ class _PracticeState extends State<Practice> {
                   color: Colors.green[900],
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: Align(
+                child: const Align(
                   alignment: Alignment.center,
                   child: Text('Setting'),
                 )),
@@ -61,7 +61,7 @@ class _PracticeState extends State<Practice> {
               Container(
                 height: 80,
                 width: 80,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.white54, shape: BoxShape.circle),
                 child: Icon(
                   Icons.person,
@@ -69,11 +69,11 @@ class _PracticeState extends State<Practice> {
                   color: Colors.grey[700],
                 ),
               ),
-              Padding(padding: EdgeInsets.only(top: 15)),
+              const Padding(padding: EdgeInsets.only(top: 15)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  FlatButton(
+                  TextButton(
                     onPressed: () {},
                     child: Container(
                       height: 45,
@@ -86,7 +86,7 @@ class _PracticeState extends State<Practice> {
                           )),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.create,
                             size: 30,
@@ -104,7 +104,7 @@ class _PracticeState extends State<Practice> {
                       ),
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {},
                     child: Container(
                       height: 45,
@@ -117,7 +117,7 @@ class _PracticeState extends State<Practice> {
                           )),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
+                        children: const [
                           Icon(
                             Icons.person_add_alt_rounded,
                             size: 30,
@@ -137,12 +137,12 @@ class _PracticeState extends State<Practice> {
                   ),
                 ],
               ),
-              Padding(padding: EdgeInsets.only(top: 15)),
-              Container(
+              const Padding(padding: EdgeInsets.only(top: 15)),
+              SizedBox(
                 height: 150,
                 width: 250,
                 child: Column(
-                  children: [
+                  children: const [
                     Text(
                       'Nazmus Salehin',
                       style: TextStyle(
