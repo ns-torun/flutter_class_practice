@@ -32,7 +32,7 @@ class _AppBarRaisedButtonState extends State<AppBarRaisedButton> {
         child: Align(
           alignment: Alignment.center,
           child: Container(
-            height: 478,
+            height: 484,
             width: double.infinity,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -106,7 +106,7 @@ class _AppBarRaisedButtonState extends State<AppBarRaisedButton> {
                 //posting container
 
                 SizedBox(
-                  height: 358,
+                  height: 364,
                   width: double.infinity,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -122,11 +122,18 @@ class _AppBarRaisedButtonState extends State<AppBarRaisedButton> {
                       ),
                       const Padding(padding: EdgeInsets.only(top: 10)),
                       Image.asset('images/mini_group.png'),
-                      const SizedBox(
-                        height: 10,
+                      const Divider(
+                        color: Colors.black38,
+                        indent: 15,
+                        endIndent: 15,
+                        thickness: 0.2,
                       ),
+
+                      //Like,Comment,Share icon
+
                       Container(
-                        height: 50,
+                        padding: const EdgeInsets.only(left: 15, right: 15),
+                        height: 20,
                         width: double.infinity,
                         decoration: const BoxDecoration(color: Colors.white),
                         child: Row(
@@ -134,7 +141,7 @@ class _AppBarRaisedButtonState extends State<AppBarRaisedButton> {
                           children: [
                             IconButton(
                               onPressed: () {},
-                              icon: const Icon(Icons.thumb_up_off_alt_outlined),
+                              icon: const Icon(Icons.thumb_up_outlined),
                             ),
                             IconButton(
                               onPressed: () {},
@@ -144,10 +151,6 @@ class _AppBarRaisedButtonState extends State<AppBarRaisedButton> {
                               onPressed: () {},
                               icon: const Icon(Icons.share),
                             ),
-                            ElevatedButton.icon(
-                                onPressed: () {},
-                                icon: const Icon(CupertinoIcons.heart),
-                                label: const Text('Love'))
                           ],
                         ),
                       ),
